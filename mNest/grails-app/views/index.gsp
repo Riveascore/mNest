@@ -112,15 +112,7 @@
 
 			<div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
-
-				<div id="modal">
-				<g:twitchStream videoKey="snoopeh" />    
-				</div>
-				<g:javascript>
-					$('#modal').show()
-					$('#modal').draggable()
-				</g:javascript>
-				
+				<g:twitchStream videoKey="ocelote" />
 				
 				<ul>
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
