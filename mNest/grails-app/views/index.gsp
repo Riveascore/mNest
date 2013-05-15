@@ -106,7 +106,19 @@
 		<div id="page-body" role="main">
 			<h1>Welcome to Grails</h1>
 			
-			<g:twitchStream videoKey="ocelote" />
+			
+			
+			<g:twitchStream videoKey="nadeshot" />
+			
+			<g:rightClick objectName="twitch_stream_nadeshot" />
+			
+			<g:twitchStream videoKey="ijevin" />
+			
+			<g:rightClick objectName="twitch_stream_ijevin" />
+			
+			<g:video videoKey="IxxstCcJlsc" width="320px" height="240px" />
+			
+			
 			
 			<p>Congratulations, you have successfully started your first Grails application! At the moment
 			   this is the default page, feel free to modify it to either redirect to a controller or display whatever

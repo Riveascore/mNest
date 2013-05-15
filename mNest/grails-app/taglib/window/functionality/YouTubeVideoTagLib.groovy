@@ -1,4 +1,4 @@
-package com.company.project
+package window.functionality
 
 class YouTubeVideoTagLib {
 	

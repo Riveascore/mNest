@@ -1,4 +1,4 @@
-package com.company.project
+package window.functionality
 
 class TwitchTagLib {
 	def twitchStream = {attrs->
@@ -14,11 +14,14 @@ class TwitchTagLib {
 				param(name:"movie", value:"http://www.twitch.tv/widgets/live_embed_player.swf")
 			}
 		}
+		
+		//"${divOpening}${xml}</div><script type='text/javascript'>${draggable}${resizeablePerserveAspect}</script>"
+		
 		def xml = new groovy.xml.StreamingMarkupBuilder().bind(vd)
 		def divOpening = "<div class = 'twitchVideo' id='twitch_stream_${videoKey}'>"
 		def draggable = "\$('#twitch_stream_${videoKey}').draggable();"
 		def resizable = "\$('#twitch_stream_${videoKey}').resizable();"
 		def resizeablePerserveAspect = "\$('#twitch_stream_${videoKey}').resizable({aspectRatio: 622 / 380});"
-		out << "${divOpening}${xml}</div><script type='text/javascript'>${draggable}${resizeablePerserveAspect}</script>"
+		out << "${divOpening}${xml}</div>"
 	}
 }
